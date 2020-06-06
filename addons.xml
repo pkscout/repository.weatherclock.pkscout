@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+
+<addon id="skin.weatherclock" version="0.1.0" name="Weather Clock" provider-name="pkscout">
+	<requires>
+		<import addon="xbmc.gui" version="5.14.0"/>
+        <import addon="script.weatherstation.lite" version="1.0.0" />
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1706" height="960" aspect="16:9" default="true" folder="xml"/>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">A skin that turns Kodi into a simple weather clock</summary>
+		<description lang="en_GB">A skin designed to be used on a touchscreen device like the Raspberry Pi with touchscreen that converts Kodi into a simple weather clock. This is a HEAVILY modified and stripped down version of Estouchy.</description>
+		<platform>all</platform>
+		<license>Creative Commons Attribution-Share Alike 3.0 United States</license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/pkscout/skin.weatherclock</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/screenshot-01.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="script.weatherstation.lite" name="Weather Station Lite" version="1.1.0" provider-name="pkscout">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0" />
+		<import addon="script.module.kodi-six" version="0.0.3" />
+		<import addon="script.module.future" version="0.16.0.4" />
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<news>
+v.1.1.0
+Python 2/3 compatability
+		</news>
+		<description lang="en">Reads weather data from external sources and adds that information to the weather window properties.</description>
+		<description lang="en_NZ">Reads weather data from from external sources and adds that information to the weather window properties.</description>
+		<description lang="en_US">Reads weather data from from external sources and adds that information to the weather window properties.</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/pkscout/script.weatherstation</source>
+	</extension>
+</addon>
+
+</addons>
