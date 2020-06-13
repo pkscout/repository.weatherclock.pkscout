@@ -33,7 +33,7 @@ v.0.8.0
 	</extension>
 </addon>
 
-<addon id="script.weatherstation.lite" name="Weather Station Lite" version="1.3.0" provider-name="pkscout">
+<addon id="script.weatherstation.lite" name="Weather Station Lite" version="1.4.0" provider-name="pkscout">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.kodi-six" version="0.0.3" />
@@ -44,8 +44,8 @@ v.0.8.0
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<news>
-v.1.3.0
-- added settings to pick hardware sensors from Kodi
+v.1.4.0
+- made light level for actions more granular
 		</news>
 		<description lang="en">Reads weather data from external sources and adds that information to the weather window properties.</description>
 		<description lang="en_NZ">Reads weather data from from external sources and adds that information to the weather window properties.</description>
